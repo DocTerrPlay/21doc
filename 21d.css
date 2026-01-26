@@ -5,14 +5,14 @@ body {
 }
 
 #Карты-Дилера img {
-    height: 200px;
-    width: 150px;
+    height: 400px;
+    width: 300px;
     margin: 1px;
 }
 
 #Карты-ТЫ img {
-    height: 200px;
-    width: 150px;
+    height: 400px;
+    width: 300px;
     margin: 1px;
 }
 
@@ -28,5 +28,6 @@ body {
     font-size: 20px;
 
 }
+
 
 
