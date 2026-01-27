@@ -5,7 +5,7 @@ let yourSum = 0;
 let dealerAceCount = 0;
 let yourAceCount = 0; 
 
-let hidden;
+let Скрытые;
 let deck;
 
 let canHit = true; //allows the player (you) to draw while yourSum <= 21
@@ -41,8 +41,8 @@ function shuffleDeck() {
 
 function startGame() {
     hidden = deck.pop();
-    dealerSum += getValue(hidden);
-    dealerAceCount += checkAce(hidden);
+    dealerSum += getValue(Скрытые);
+    dealerAceCount += checkAce(Скрытые);
     // console.log(hidden);
     // console.log(dealerSum);
     while (dealerSum < 17) {
@@ -66,8 +66,8 @@ function startGame() {
     }
 
     console.log(yourSum);
-    document.getElementById("hit").addEventListener("click", hit);
-    document.getElementById("stay").addEventListener("click", stay);
+    document.getElementById("Взять").addEventListener("click", hit);
+    document.getElementById("Хватит").addEventListener("click", stay);
 
 }
 
@@ -94,7 +94,7 @@ function stay() {
     yourSum = reduceAce(yourSum, yourAceCount);
 
     canHit = false;
-    document.getElementById("Скрытые").src = "./cards/" + hidden + ".png";
+    document.getElementById("Скрытые").src = "./cards/" + Скрытые + ".png";
 
     let message = "";
     if (yourSum > 21) {
@@ -146,4 +146,5 @@ function reduceAce(playerSum, playerAceCount) {
     }
     return playerSum;
 }
+
 
