@@ -42,7 +42,26 @@ message {
   text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;  
     font-size: 80px; }
 
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  height: 200px;
+  background-color: #fff;
+  border: 1px solid #000;
+  opacity: 1;
+  z-index: 9999;
+}
 
+function openPopup() {
+  var popup = document.querySelector('.popup');
+  popup.style.display = 'block';
+}
 
-
+function closePopup() {
+  var popup = document.querySelector('.popup');
+  popup.style.display = 'none';
+}
 
